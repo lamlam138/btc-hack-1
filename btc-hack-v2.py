@@ -1,22 +1,19 @@
 # BTC hack v2
 # Made by David Gilbert
 # https://github.com/davidmgilbert/btc-hack
-# https://www.davidmgilbert.com
-
-#!/usr/bin/python3
-
-import hashlib
-import os
-import hashlib
-import binascii
-import requests
-import ecdsa
-import base58
+# https://www.da
+import pylance [11,7] 
+import
 import webbrowser
-import PySimpleGUI as sg
-from json import (load as jsonload, dump as jsondump)
+from json import dump as jsondump
+from json import load as jsonload
 from os import path
-import json
+
+import base58
+import ecdsa
+import PySimpleGUI as sg
+import requests
+
 
 def generate_private_key():
     return binascii.hexlify(os.urandom(32)).decode('utf-8')
